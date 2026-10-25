@@ -1,0 +1,23 @@
+name: Pruebas del conversor
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener el código
+        uses: action/checkout@v6
+        
+      - name: Configurar python
+        uses: action/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements_dev.txt
+
+      - name: Ejecutar pruebas
+        run: python -m pytest -v
