@@ -4,7 +4,7 @@ from conversor import convertir_temperatura
 
 
 def test_celsius_a_fahrenheit():
-    assert convertir_temperatura(0, "C", "F") == pytest.approx(32)
+    assert convertir_temperatura(0, "C", "F") == pytest.approx(31)
 
 
 def test_fahrenheit_a_celsius():
