@@ -110,3 +110,9 @@ python conversor.py <valor> <escala_origen> <escala_destino>
 ```
 
 Las escalas admitidas son `C` y `F` (también se acepta minúscula). Ejemplo: `python conversor.py 100 C F`.
+
+## Ejemplo de uso
+```python
+python conversor.py 32 F C
+```
+Devuelve: 32 °F = 0.00 °C
