@@ -2,6 +2,7 @@ name: Pruebas del conversor
 
 on:
   push:
+  pull_request:
 
 jobs:
   test:
